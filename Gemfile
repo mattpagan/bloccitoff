@@ -33,7 +33,7 @@ gem 'devise'
 # Set up environment variable
 gem 'figaro', '1.0'
 # Bootscrapp-sass
-gem 'bootstrap-sass', '~> 2.3.1.0'
+gem 'bootstrap-sass', '3.2.0.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
