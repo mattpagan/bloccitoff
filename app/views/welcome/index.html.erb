@@ -1,17 +1,11 @@
-<br>
-<div class="jumbotron">
-  <h1>Bloccitoff</h1>
-  <p>Bloccitoff, Your New To Do List</p>
-
-</div>
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Benefit 1</h2>
-    <p>Highlight benefit</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Benefits 2</h2>
-    <p>Highlight benefit</p>
-  </div>
+<div class="row background-helper">
+   <div class="col-md-2">
+   </div>
+   <div class="col-md-8 text-center">
+    <% unless current_user %>
+      <%= link_to 'Sign Up', new_user_registration_path, class: 'sign-up button' %>
+    <% end %>
+   </div>
+   <div class="col-md-2">
+   </div>
 </div>

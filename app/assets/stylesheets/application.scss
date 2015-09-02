@@ -14,6 +14,7 @@
  *= require_self
  */
 
+ @import "bootstrap-sprockets";
  @import "bootstrap";
 
  .user-info {
@@ -24,6 +25,40 @@
    margin-top: 5px;
  }
 
-.col-sm-4, .col-md-4, .col-lg-4 {
-	margin-top: 20px;
+ .nav-row {
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.brand-helper {
+  text-decoration: none;
+  color: #03c9a9;
+  margin-top: 24px;
+  font-family: 'Open Sans';
+  font-weight: 900;
+}
+
+.brand-helper:hover {
+  text-decoration: none;
+  color: #03c9a9;
+}
+
+.access {
+  font-family: 'Open Sans';
+  float: right;
+  margin-top: 20px;
+}
+
+.sign-in {
+  color: #03c9a9;
+}
+
+.background-helper {
+  background-color: #03c9a9;
+  height: 1200px;
+}
+
+.inline {
+  display: inline-block;
 }
