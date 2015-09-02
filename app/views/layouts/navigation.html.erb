@@ -1,0 +1,13 @@
+<div class="row nav-row">
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+      <% if current_user %>
+        Hello, <%= current_user.name %>!
+      <% else %>
+      <%= link_to 'Sign In', new_user_session_path, class: 'sign-in'%></h4>
+      <% end %>
+  </div>
+  <div class="col-md-2">
+  </div>
+</div>

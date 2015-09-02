@@ -6,10 +6,10 @@
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 
-SENDGRID_USERNAME: app35133134@heroku.com
-SENDGRID_PASSWORD: 5pdmwbjt
+SENDGRID_USERNAME: app40279930@heroku.com
+SENDGRID_PASSWORD: ipqh4nhb1236
 
-SECRET_KEY_BASE: 
+SECRET_KEY_BASE: dd543f77dc1707bde8c393d31ab7fa8c448ccecd1a414cc89e9b839acf48a47ff99dec2363d04d366b99f4db10668fe93edaf8a18b1751e04a1ac3a366915e40
 
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
