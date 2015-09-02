@@ -12,6 +12,15 @@
       <ul class="nav nav-tabs">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", about_path %></li>
+
+          <div class="jumbotron">
+          <h1>Bloccitoff</h1>
+  <p>A Project App.</p>
+  <p>
+      <a class="btn btn-primary" href="/users/sign_in">Sign In</a> or
+      <a class="btn btn-primary" href="/users/sign_up">Sign Up</a> today!
+  </p>
+</div>
       </ul>
   <%= yield %>
   </div>
