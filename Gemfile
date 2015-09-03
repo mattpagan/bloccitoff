@@ -35,14 +35,17 @@ gem 'figaro', '1.0'
 # Bootscrapp-sass
 gem 'bootstrap-sass', '3.2.0.2'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'pundit'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+gem 'faker'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
