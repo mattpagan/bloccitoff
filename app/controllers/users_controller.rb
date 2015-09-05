@@ -2,6 +2,9 @@ class UsersController < ApplicationController
    before_action :authenticate_user!, except: [:show]
 
    def show
+     if current_user
+       @user_items = current_user.items
+     end
    end
 
    def update
