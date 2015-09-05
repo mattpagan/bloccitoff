@@ -9,7 +9,7 @@
     </ul>
 <% end %>
   <%= form_group_tag(item.errors[:name]) do %>
-    <%= f.text_field :name, class: 'form-control inliner', placeholder: "Enter your todo item and click ENTER" %>
+    <%= f.text_field :name, class: 'form-control inliner', placeholder: "Enter your to-do and click 'Create To-do'" %>
   <% end %>
   <div class="form-group">
     <%= f.submit "Create To-do", class: 'btn hidden-button' %>
