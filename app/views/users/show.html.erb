@@ -1,48 +1,21 @@
 <% if current_user %>
-    <div class="col-md-3">
-    </div>
-    <p></p>
-    <div class="col-md-6">
     <p>Welcome <%= current_user.name %>!</p>
-    </div>
+    
     <div class="container-fluid"> 
-      <table class="table table-striped">
-        <tr>
-          <th> Description </th>
-          <th> Days Left </th>
-          <th> Complete </th>
-        </tr>
-      </table>
+      
       <div class="row">
           <% if @user_items.count < 1 %>
         <div class="text-center">
-          <h3 class="lead no-items-helper">Make your first to-do below</h3>
+          <h4>Make your first to-do below</h4>
         </div>
       <% end %>
-      <div class="js-items text-center">
         <% @user_items.each do |item| %>
           <%= render partial: 'items/item', locals: { item: item } %>
         <% end %>
       </div>
       <div class="text-center">
-        <div class="new_item item">
           <%= render partial: 'items/form', locals: {item: Item.new } %>
-        </div>
-        <br>
-        <div class="information">
-          <small><i>
-            <span class="glyphicon glyphicon-exclamation-sign"></span>
-            Items longer than 40 characters will not post to your list.
-          </i>
-          </small>
-        </div>
       </div>
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
-      </div>
-    </div>
-<% else %>
-   <%= render partial: "users/welcome" %>
-<% end %>
+        <% else %>
+           <%= render partial: "users/welcome" %>
+        <% end %>
