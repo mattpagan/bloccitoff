@@ -1,21 +1,27 @@
 <% if current_user %>
     <p>Welcome <%= current_user.name %>!</p>
     
-    <div class="container-fluid"> 
-      
-      <div class="row">
+    <div class="container-fluid">
+      <div class="to-do-container">
+        
+        <div class="row">
           <% if @user_items.count < 1 %>
-        <div class="text-center">
-          <h4>Make your first to-do below</h4>
+        
+          <div class="text-center">
+            <h4>Make your first to-do below</h4>
+          </div>
+          <% end %>
         </div>
-      <% end %>
-        <% @user_items.each do |item| %>
-          <%= render partial: 'items/item', locals: { item: item } %>
-        <% end %>
-      </div>
-      <div class="text-center">
-          <%= render partial: 'items/form', locals: {item: Item.new } %>
-      </div>
-        <% else %>
-           <%= render partial: "users/welcome" %>
-        <% end %>
+
+        <div class="to-do-items text-left">
+          <% @user_items.each do |item| %>
+            <%= render partial: 'items/item', locals: { item: item } %>
+          <% end %>
+        </div>
+
+        <div class="text-left">
+            <%= render partial: 'items/form', locals: {item: Item.new } %>
+        </div>
+          <% else %>
+            <%= render partial: "users/welcome" %>
+<% end %>

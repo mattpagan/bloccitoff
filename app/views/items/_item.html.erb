@@ -1,6 +1,8 @@
 <%= content_tag :div, class: 'item', id: "item-#{item.id}" do %>
-  <div class="pull-left"><%= item.name %></div>
-  <%= link_to [item], method: :delete, class: 'pull-right', remote: true do %>
-    <span class="glyphicon glyphicon-ok"></span>
+  <div class="to-do-container"><%= item.name %></div>
+  <div class="align-right">
+  <%= link_to [item], method: :delete, class: 'align-right', remote: true do %>
+    <span class="glyphicon glyphicon-ok-sign"></span>
+  </div>
   <% end %>
 <% end %>
