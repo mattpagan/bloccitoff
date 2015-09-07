@@ -26,6 +26,12 @@
    margin-top: 5px;
  }
 
+ .welcome-name {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Open Sans";
+ }
+
  .jumbotron {
     padding: 30px 15px;
     margin-bottom: 30px;
@@ -58,7 +64,6 @@
     -webkit-user-select: none;
 }
 .to-do-container {
-    width: 700px;
     margin: 0 auto;
     background-color: #9932CC;
     color: #FFF;
@@ -66,5 +71,5 @@
 }
 .align-right {
     float: right;
-    margin-right: 10px;
+    margin-top: -18px;
 }
