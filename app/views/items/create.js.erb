@@ -1,6 +1,8 @@
 <% if @item.valid? %>
    $('.js-items').append("<%= escape_javascript(render partial: 'items/item', locals: { item: @item }) %>");
    $('.new-item').html("<%= escape_javascript(render partial: 'items/form', locals: { item: Item.new }) %>");
+   $('.alert-phantom').append('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button><%= flash[:info] = "Awesome, job creating your to-do." %></div>');
 <% else %>
    $('.new-item').html("<%= escape_javascript(render partial: 'items/form', locals: { item: Item.new }) %>");
+   $('.alert-phantom').append('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button><%= flash[:info] = "Sorry there was an error creating your	 to-do." %></div>');
 <% end %>
