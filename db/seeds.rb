@@ -25,6 +25,7 @@ users = User.all
 item = Item.new(
 name:     'Default to-do',
 )
+item.skip_confirmation!
 item.save!
 
 puts "Seed finished"
