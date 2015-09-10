@@ -24,9 +24,10 @@ users = User.all
 # Create an item
 item = Item.new(
 name:     'Default to-do',
+user_id: 6
 )
-item.skip_confirmation!
 item.save!
+item.update_attribute(:created_at, DateTime.new(2015,9,4,23,34,0))
 
 puts "Seed finished"
 puts "#{User.count} users created"
