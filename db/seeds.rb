@@ -24,7 +24,7 @@ member = User.new(
 # Create an item
 item = Item.new(
   name:     'Default to-do',
-  user_id:  1
+  user_id:  6
 )
 item.save!
 item.update_attribute(:created_at, Date.new(2015,9,1))
