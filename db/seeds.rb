@@ -13,7 +13,7 @@ end
 users = User.all
 
 # Create a member
- member = User.new(
+member = User.new(
    name:     'Member User',
    email:    'member@example.com',
    password: 'helloworld'
@@ -23,10 +23,11 @@ users = User.all
 
 # Create an item
 item = Item.new(
-name:     'Default to-do',
+  name:     'Default to-do',
+  user_id:  1
 )
-item.skip_confirmation!
 item.save!
+item.update_attribute(:created_at, Date.new(2015,9,1))
 
 puts "Seed finished"
 puts "#{User.count} users created"
