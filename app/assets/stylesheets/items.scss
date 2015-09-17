@@ -11,7 +11,10 @@
 }
 
 .item-name {
-	color: #FFF;
+    color: #FFF;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #9FA09E;
 }
 
 .glyphicon {
@@ -22,4 +25,5 @@
 .days-remaining {
 	margin-right:10px;
 	margin-bottom:2px;
+    top: -12px !important;
 }
